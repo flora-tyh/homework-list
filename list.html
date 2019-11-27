@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: FrederickatheGreat-Regular;
+    color: white;
+}
+
+@font-face { 
+    font-family: FrederickatheGreat-Regular;
+    src: url("./FrederickatheGreat-Regular.ttf")
+}
+
+html, 
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 225px;
+}  
+
+.list {
+    width: 250px;
+    height: 50px;
+    background-color: orange;
+    line-height: 50px;
+}
+
+.title {
+    position: relative;
+    border-radius: 10px;
+    text-indent: 20px;
+}
+
+.white-angle {
+    position: absolute;
+    right: 12px;
+    top: 18px;
+    width: 0px;
+    border-top: 15px solid white;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+}
+
+.gap {
+    position: relative;
+    width: 100%;
+    height: 20px;
+}
+
+.red-angle {
+    position: absolute;
+    right: 12px;
+    bottom: 0px;
+    width: 0px;
+    border-bottom: 15px solid orange;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+}
+
+.like {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.favorites {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.discuss {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.list a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+}
+
+.list img {
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+</style>    
+</head>
+<body>
+  <div class="box"> 
+    <div class="title list">Sanint Petersburg
+      <div class="white-angle"></div>  
+    </div>
+    <div class="gap">
+      <div class="red-angle"></div>
+    </div>
+    <ul>
+      <li class="list like">
+        <a href="#">
+          <img src="./icon_smk2e0njoa/aixin.svg">  
+        Like
+        </a>
+      </li>
+      <li class="list favorites">
+        <a href="#">
+          <img src="./icon_smk2e0njoa/shoucang.svg">          
+          Favorites
+        </a>
+      </li>
+      <li class="list discuss">
+        <a href="#">
+          <img src="./icon_smk2e0njoa/pinglun.svg">   
+        Discuss
+        </a>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>
