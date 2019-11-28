@@ -14,12 +14,12 @@
     color: white;
 }
 
-@font-face { 
+@font-face {
     font-family: FrederickatheGreat-Regular;
     src: url("./FrederickatheGreat-Regular.ttf")
 }
 
-html, 
+html,
 body {
     width: 100%;
     height: 100%;
@@ -36,9 +36,12 @@ body {
     flex-direction: column;
     width: 250px;
     height: 225px;
-}  
+}
 
 .list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     width: 250px;
     height: 50px;
     background-color: orange;
@@ -93,45 +96,51 @@ body {
 }
 
 .list a {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     text-decoration: none;
 }
 
-.list img {
+.icon {
+    margin: 15px;
     width: 25px;
-    height: 25px;
-    margin-left: 10px;
-    margin-right: 10px;
+    height: 22px;
+    background-image: url("./background.png");
+    background-size: 99px 70px;
 }
 
-</style>    
+.icon-like {
+    background-position: 0 -33px;
+}
+
+.icon-favorites {
+  background-position: -42px 0;
+}
+
+</style>
 </head>
 <body>
-  <div class="box"> 
+  <div class="box">
     <div class="title list">Sanint Petersburg
-      <div class="white-angle"></div>  
+      <div class="white-angle"></div>
     </div>
     <div class="gap">
       <div class="red-angle"></div>
     </div>
     <ul>
       <li class="list like">
+        <div class="icon icon-like"></div>
         <a href="#">
-          <img src="./icon_smk2e0njoa/aixin.svg">  
         Like
         </a>
       </li>
       <li class="list favorites">
+        <div class="icon icon-favorites"></div>
         <a href="#">
-          <img src="./icon_smk2e0njoa/shoucang.svg">          
-          Favorites
+        Favorites
         </a>
       </li>
       <li class="list discuss">
+        <div class="icon icon-discuss"></div>
         <a href="#">
-          <img src="./icon_smk2e0njoa/pinglun.svg">   
         Discuss
         </a>
       </li>
